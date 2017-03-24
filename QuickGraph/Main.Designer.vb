@@ -23,13 +23,24 @@ Partial Class Main
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
+        Me.btnCreateGraph = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnCreateGraph
+        '
+        Me.btnCreateGraph.Location = New System.Drawing.Point(87, 173)
+        Me.btnCreateGraph.Name = "btnCreateGraph"
+        Me.btnCreateGraph.Size = New System.Drawing.Size(109, 23)
+        Me.btnCreateGraph.TabIndex = 0
+        Me.btnCreateGraph.Text = "Create Graph"
+        Me.btnCreateGraph.UseVisualStyleBackColor = True
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.btnCreateGraph)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Main"
         Me.Text = "Happy graphing :-)"
@@ -37,4 +48,5 @@ Partial Class Main
 
     End Sub
 
+    Friend WithEvents btnCreateGraph As Button
 End Class
